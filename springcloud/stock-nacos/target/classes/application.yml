@@ -1,0 +1,15 @@
+server:
+  port: 8021
+#应用名称(nacos将该名称作为服务名称)
+spring:
+  application:
+    name: stock-service
+  cloud:
+    nacos:
+      server-addr: 192.168.161.23:8848
+      discovery:
+        username: nacos
+        password: nacos
+        #namespace: public #相同特征的服务进行归类分组管理
+        namespace: public
+        #ephemeral: false
